@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planned House's</title>
+    <link rel="shortcut icon" href="/css/img/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS link do bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!---ICONS Botstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <!---link do css--->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript link do bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!---Nav Bar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-03">
+        <a href="#" class="navbar-brand">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/47/47579.png"
+            alt="iMove"
+          />
+          <span>iMove</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse.navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Imóveis</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contato</a>
+            </li>
+            <li class="nav-item-e">
+              <a href="./login.html" class="nav-link">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-------SEPARAÇÃO SLIDER-------->
+    <div class="container" id="slider-container">
+      <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            class="active"
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/css/img/banner-1.jpg"
+              alt="Projeto-casa-planejada 1"
+              class="d-block w-100"
+            />
+
+            <div class="carousel-caption">
+              <h5>O Seu Projeto De Casa Está Aqui!</h5>
+              <a href="#" class="btn btn-dark">Confira os projetos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/css/img/banner-2.jpg"
+              alt="Projeto-casa-planejada 2"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption">
+              <h5>Plantas com autonomia</h5>
+              <a href="#" class="btn btn-dark">Confira os projetos</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/css/img/banner-3.jpg"
+              alt="Projeto-casa-planejada 3"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption">
+              <h5>Design com rentabilidade</h5>
+              <a href="#" class="btn btn-dark">Confira os projetos</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-chevron-compact-left"></i>
+          <span class="visually-hidden">Preview</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-chevron-compact-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--------MINI BANERS--------->
+      <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row">
+          <!----BANER 01-->
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-box primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-tittle primary-color">Projeto Personalizado</h5>
+                <p class="card-text secondary-color">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  <br />Quaerat quasi et voluptas nobis, sit consequuntur
+                  blanditiis fugit beatae.
+                </p>
+                <a href="Saber Mais" class="btn btn-dark">Saiba Mais </a>
+              </div>
+              <!---FIM BANER 01-->
+            </div>
+          </div>
+          <!---BANER 02-->
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-layers primary-color"></i>
+              <div class="card-body">
+                <h5 class="card-tittle primary-color">
+                  Arquitetônico completo
+                </h5>
+                <p class="card-text secondary-color">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  <br />Quaerat quasi et voluptas nobis, sit consequuntur
+                  blanditiis fugit beatae.
+                </p>
+                <a href="Saber Mais" class="btn btn-dark">Saiba Mais</a>
+                <!--FIM BANER 02-->
+              </div>
+            </div>
+            <!---BANER 03-->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <i class="bi bi-lightbulb"></i>
+              <div class="card-body">
+                <h5 class="card-tittle primary-color">Projeto Conceito</h5>
+                <p class="card-text secondary-color">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  <br />Quaerat quasi et voluptas nobis, sit consequuntur
+                  blanditiis fugit beatae.
+                </p>
+                <a href="Saber Mais" class="btn btn-dark">Saiba Mais</a>
+              </div>
+            </div>
+            <!--FIM BANER 03-->
+          </div>
+        </div>
+        <!---DIV ROW-->
+      </div>
+      <!--DIV MINI BANNERS-->
+    </div>
+    <!---DIV SLIDER-->
+
+    <!----DESTAQUES---->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="tittle primary-collor">Projetos em Destaques</h2>
+        <p class="subtittle secondary-color">Conheça melhor o nosso trabalho</p>
+      </div>
+      <div class="col-12" id="featuread-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img
+              src="/css/img/project-1.jpg"
+              alt="project-1"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <p class="secondary-color">Clean Planed's</p>
+              <h3>Frazzo</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="/css/img/project-2.jpg"
+              alt="project-2"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <p class="secondary-color">Abstract Planed's</p>
+              <h3>Crazeintz</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="/css/img/project-3.jpg"
+              alt="project-3"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <p class="secondary-color">Conforty Planed's</p>
+              <h3>Jarycite</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="/css/img/project-4.jpg"
+              alt="project-4"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <p class="secondary-color">Classe Planed's</p>
+              <h3>Chaiend</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="/css/img/project-5.jpg"
+              alt="project-5"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <p class="secondary-color">rustic Planed's</p>
+              <h3>Frather</h3>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="/css/img/project-6.jpg"
+              alt="project-6"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <p class="secondary-color">Country Planed's</p>
+              <h3>Britsoul</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----INFO---->
+    <div class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="tittle primary-collor">Obtenha mais informações</h2>
+        <p class="subtittle secondary-color">
+          Saiba mais sobre o desenvolvimento do desing
+        </p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img
+              src="/css/img/infobanner.jpg"
+              alt="Informações da Empresa"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="tittle primary-collor">Dados de serviço</h2>
+                <p class="subtitle secondary-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />Expedita, dolorum veritatis! Suscipit, ipsa qui iste
+                  mollitia nisi <br />cumque aliquam eum perferendis itaque
+                  quasi.<br />
+                  Non officiis repudiandae voluptatibus a delectus neque.
+                </p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">17</h3>
+                    <p class="secondary-color">
+                      Anos de contrução civil <br />e paisagismo
+                    </p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">128</h3>
+                    <p class="secondary-color">Projetos executados</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">342</h3>
+                    <p class="secondary-color">Clientes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <a href="#" class="btn btn-dark">Saber mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------FOOOTER---------------->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!--TOP FOOTER-->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4"><h2>iMove</h2></div>
+              <div class="col-4" id="social-items">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <!---DETALHES DO FOOTER---
+          <div class="col-12" id="footer-details">
+          <div class="row">
+            <div class="col-12 col-md-4" id="novo-container">
+              <h4>Inscreva-se</h4>
+              <p class="secondary-color">Receba nossa newsletter com novos projetos,<br> lançamentos,
+                descontos e novidades sobre nossos serviços!</p>
+                <form>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="E-mail">
+                  </div>
+                  <button class="btn btn-dark" type="submit">Inscreva-se</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+              <h4>Atendimento</h4>
+              <p class="secondary-color"> (31) 3415-16200</p>
+              <p class="secondary-color"> (31) 3415-16234</p>
+              <p class="secondary-color">contato@iMove.com</p>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+          <!---FOOTER BOTTOM---->
+          <div class="col-12" id="footer-bottom"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
